@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap");
+
+.container {
+  color: white;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 50px;
+}
+
+.grid__item {
+  padding: 20px;
+  position: relative;
+}
+
+.caption {
+  max-width: 400px;
+  font-size: 28px;
+  justify-content: flex-start;
+  font-family: "Oswald", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+.card__wrapper {
+  width: 100%;
+  justify-content: center;
+}
+.top__card {
+  position: absolute;
+  z-index: 1;
+}
+
+.rotate__left {
+  rotate: -20deg;
+}
+.rotate__right {
+  rotate: 20deg;
+}
+
+@media (max-width: 764px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .top__card {
+    left: 40%;
+  }
+}

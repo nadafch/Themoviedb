@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+.banner {
+  width: 100%;
+  max-height: 450px;
+  position: relative;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.632), transparent);
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.content {
+  max-width: 40%;
+  position: absolute;
+  top: 40%;
+  margin-left: 32px;
+  z-index: 999;
+  color: white;
+}
+
+.content h1 {
+  font-size: 34px;
+  font-family: "Bebas Neue", sans-serif;
+  word-spacing: 3px;
+}
+
+.content__rate {
+  width: 100%;
+  display: flex;
+  font-size: 18px;
+  gap: 20px;
+}
+
+.content__rate p {
+  margin-top: 2px;
+}
+
+.content__overview {
+  margin-top: 20px;
+  width: 500px;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    max-height: 500px;
+  }
+  .content {
+    max-width: 80%;
+    top: 30%;
+  }
+  .content h1 {
+    font-size: 24px;
+  }
+  .content__rate {
+    font-size: 14px;
+    gap: 5px;
+  }
+  .content__rate p {
+    margin-top: 4px;
+  }
+  .content__overview {
+    max-width: 300px;
+    text-align: justify;
+  }
+}
+@media (max-width: 432px) {
+  .banner {
+    height: 400px;
+  }
+  .content {
+    top: 40%;
+  }
+  .content h1 {
+    max-width: 350px;
+    font-size: 20px;
+  }
+  .content__overview {
+    font-size: 10px;
+  }
+}

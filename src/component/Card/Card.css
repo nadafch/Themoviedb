@@ -1,0 +1,27 @@
+.card {
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.scale-transition {
+  transition: transform 0.2s ease;
+}
+
+.card__overlay {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+@media (max-width: 764px) {
+  .card {
+    width: 120px;
+    height: 200px;
+  }
+}
