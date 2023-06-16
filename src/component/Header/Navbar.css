@@ -12,6 +12,17 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  color: white;
 }
 
 @media (max-width: 768px) {

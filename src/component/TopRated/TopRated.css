@@ -39,7 +39,6 @@
   position: absolute;
   z-index: 1;
 }
-
 .rotate__left {
   rotate: -20deg;
 }

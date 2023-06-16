@@ -1,8 +1,3 @@
-import {
-  LikeFilled,
-  NotificationOutlined,
-  StarFilled,
-} from "@ant-design/icons";
 import { Layout, Menu } from "antd";
 import "./Navbar.css";
 import Logo from "../../assets/imdb.svg";
@@ -17,27 +12,30 @@ function Navbar() {
     {
       label: "Popular",
       key: "popular",
-      icon: <StarFilled />,
     },
     {
       label: "Top rated",
       key: "topRated",
-      icon: <LikeFilled />,
     },
     {
       label: "Upcoming",
       key: "upcoming",
-      icon: <NotificationOutlined />,
     },
   ];
 
   const onClickMenu = (e) => {
-    currentSelect !== e.key ? setCurrentSelect(e.key) : setCurrentSelect("");
+    const element = document.getElementById(e.key);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      setCurrentSelect(e.key);
+    }
   };
 
   return (
     <Header className="app-header">
-      <img src={Logo} />
+      <a className="center" href="#">
+        <img src={Logo} />
+      </a>
       <Menu
         className="app-header__menu"
         mode="horizontal"

@@ -3,7 +3,7 @@ import "./Upcoming.css";
 
 function Upcoming() {
   return (
-    <div className="main">
+    <div className="main" id="upcoming">
       <div className="content__title center">UPCOMING</div>
       <div className="upcoming__content">
         <video src={videoBg} autoPlay loop muted />

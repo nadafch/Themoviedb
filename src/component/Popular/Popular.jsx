@@ -27,7 +27,7 @@ function Popular() {
   }, [apiKey, baseURL]);
 
   return (
-    <div className="container">
+    <section className="container" id="popular">
       <div className="center content__title">POPULAR</div>
       <div className="content__list center">
         <AnimatePresence>
@@ -45,7 +45,7 @@ function Popular() {
             ))}
         </AnimatePresence>
       </div>
-    </div>
+    </section>
   );
 }
 

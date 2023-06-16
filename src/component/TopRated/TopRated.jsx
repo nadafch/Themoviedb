@@ -10,7 +10,7 @@ function TopRated() {
     "/lyQBXzOQSuE59IsHyhrp0qIiPAz.jpg",
   ];
   return (
-    <div className="container">
+    <div className="container" id="topRated">
       <div className="content__title center">TOP RATED</div>
       <div className="grid">
         <div className="grid__item center">
