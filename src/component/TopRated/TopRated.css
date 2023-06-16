@@ -17,7 +17,7 @@
 }
 
 .grid__item {
-  padding: 20px;
+  padding: 25px;
   position: relative;
 }
 
@@ -53,5 +53,8 @@
   }
   .top__card {
     left: 40%;
+  }
+  .caption {
+    font-size: 20px;
   }
 }

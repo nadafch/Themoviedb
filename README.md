@@ -1,6 +1,6 @@
 # MovieDB App
 
-![MovieDB App Screenshot](app-screenshot.png)
+![Alt text](public/image.png)
 
 MovieDB App is a web application that allows users to browse for movies and TV shows. It utilizes the MovieDB API to fetch and display movie data.
 
